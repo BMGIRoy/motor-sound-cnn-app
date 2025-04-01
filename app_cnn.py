@@ -50,6 +50,6 @@ if uploaded_file:
         label = "Abnormal" if prediction >= 0.5 else "Normal"
         confidence = prediction if prediction >= 0.5 else 1 - prediction
 
-        st.success(f"🧠 Prediction: **{label}**  
+        st.success(f"🧠 Prediction: **{label}**") 
 Confidence: {confidence:.2f}")
         st.image(spectrogram, caption="Generated Mel-Spectrogram", use_column_width=True)
