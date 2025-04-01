@@ -51,5 +51,5 @@ if uploaded_file:
         confidence = prediction if prediction >= 0.5 else 1 - prediction
 
         st.success(f"🧠 Prediction: **{label}**") 
-st.write(f"Confidence: {confidence:.2f}")
+        st.write(f"Confidence: {confidence:.2f}")
         st.image(spectrogram, caption="Generated Mel-Spectrogram", use_column_width=True)
